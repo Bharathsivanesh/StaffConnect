@@ -1,0 +1,2 @@
+1)Note : for Native wind confirtaion refer "https://www.nativewind.dev/docs/getting-started/installation"
+2)npx create-expo-app StaffConnect

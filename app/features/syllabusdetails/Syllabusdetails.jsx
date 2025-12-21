@@ -161,13 +161,7 @@ export default function QAandPapersScreen() {
           )}
         </View>
 
-        {/* Floating Chat Button */}
-        <TouchableOpacity
-          className="absolute bottom-6 right-6 bg-green-500 w-14 h-14 rounded-full justify-center items-center shadow-lg"
-          onPress={() => navigation.navigate("chat")}
-        >
-          <Feather name="message-circle" size={24} color="white" />
-        </TouchableOpacity>
+     
       </View>
     </SafeAreaView>
   );

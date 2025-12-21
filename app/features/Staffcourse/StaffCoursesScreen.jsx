@@ -14,7 +14,7 @@ import { fetchCoursesByStaff } from "../../services/staffService";
 export default function StaffCoursesScreen() {
   const navigation = useNavigation();
   const route = useRoute();
-  const { staffUid } = route.params;
+  const { staffUid, staffname } = route.params;
 
   const [courses, setCourses] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -30,7 +30,9 @@ export default function StaffCoursesScreen() {
 
   const renderCourse = ({ item }) => (
     <TouchableOpacity
-      onPress={() => navigation.navigate("syllabus", { courses: courses ,C_ID:item.C_ID})}
+      onPress={() =>
+        navigation.navigate("syllabus", { courses: courses, C_ID: item.C_ID })
+      }
       className="bg-white p-4 mb-3 mx-4 rounded-2xl shadow-sm"
     >
       <Text className="text-gray-500 text-xs">Added on {item.createdAt}</Text>
@@ -86,6 +88,18 @@ export default function StaffCoursesScreen() {
           </View>
         )}
       </View>
+      {/* Floating Chat Button */}
+      <TouchableOpacity
+        className="absolute bottom-16 right-6 bg-green-500 w-14 h-14 rounded-full justify-center items-center shadow-lg"
+        onPress={() =>
+          navigation.navigate("chat", {
+            staffUid: staffUid,
+            staffname: staffname,
+          })
+        }
+      >
+        <Feather name="message-circle" size={24} color="white" />
+      </TouchableOpacity>
     </SafeAreaView>
   );
 }

@@ -53,7 +53,7 @@ export default function Home() {
             renderItem={({ item }) => (
               <TouchableOpacity
                 onPress={() =>
-                  navigation.navigate("course", { staffUid: item.uid })
+                  navigation.navigate("course", { staffUid: item.uid ,staffname:item.name })
                 }
                 className="flex-row bg-white p-4 mb-3 rounded-2xl shadow-sm items-center"
               >

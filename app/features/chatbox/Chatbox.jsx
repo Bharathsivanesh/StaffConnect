@@ -189,6 +189,18 @@ export default function ChatScreen() {
       lastMessage: text,
     });
   };
+const formatTime = (timestamp) => {
+  if (!timestamp) return "";
+
+  const date = timestamp.toDate();
+
+  return date.toLocaleTimeString("en-US", {
+    hour: "numeric",
+    minute: "2-digit",
+    hour12: true,
+  });
+};
+
 
   return (
     <SafeAreaView className="flex-1 bg-green-500">
@@ -233,6 +245,13 @@ export default function ChatScreen() {
                     className={`${isStudent ? "text-white" : "text-gray-900"}`}
                   >
                     {item.text}
+                  </Text>
+                  <Text
+                    className={`text-[10px] mt-1 self-end ${
+                      isStudent ? "text-green-100" : "text-gray-400"
+                    }`}
+                  >
+                    {formatTime(item.timestamp)}
                   </Text>
                 </View>
               </View>

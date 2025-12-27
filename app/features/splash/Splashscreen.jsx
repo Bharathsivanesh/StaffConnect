@@ -37,17 +37,14 @@ export default function SplashScreen() {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      navigation.replace("login");
+      navigation.replace("course");
     }, 3000);
 
     return () => clearTimeout(timer);
   }, [navigation]);
 
   return (
-    <LinearGradient
-      colors={["#34D399", "#047857"]} 
-      style={styles.container}
-    >
+    <LinearGradient colors={["#34D399", "#047857"]} style={styles.container}>
       <View style={styles.iconContainer}>
         <Ionicons name="laptop-outline" size={40} color="white" />
       </View>

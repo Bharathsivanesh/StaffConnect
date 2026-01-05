@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "StaffConnect",
+    "owner": "bharath2005",
     "slug": "StaffConnect",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -11,11 +12,12 @@
       "supportsTablet": true
     },
     "android": {
+      "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE"
+        "backgroundColor": "#ffffff"
       },
-
-      "package": "com.bharath26.StaffConnect"
+      "edgeToEdgeEnabled": true,
+      "package": "com.bharath26.Fcmtest"
     },
     "web": {
       "bundler": "metro",
@@ -41,7 +43,7 @@
         "origin": false
       },
       "eas": {
-        "projectId": "a60c0db3-b7a1-4234-81a8-7270b6fec102"
+        "projectId": "0dec3260-8373-435d-842a-26fc5869efcf"
       }
     }
   }

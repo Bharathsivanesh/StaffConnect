@@ -1,7 +1,6 @@
 {
   "expo": {
     "name": "StaffConnect",
-    "owner": "bharath2005",
     "slug": "StaffConnect",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -43,7 +42,7 @@
         "origin": false
       },
       "eas": {
-        "projectId": "0dec3260-8373-435d-842a-26fc5869efcf"
+        "projectId": "6687e664-7536-4b91-92a3-3fe7a837d147"
       }
     }
   }

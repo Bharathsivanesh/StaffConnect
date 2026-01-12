@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "581190643657",
+    "project_id": "staffconnect-ae358",
+    "storage_bucket": "staffconnect-ae358.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:581190643657:android:42be6d24f90b17af2a4218",
+        "android_client_info": {
+          "package_name": "com.bharath26.Fcmtest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgj2KLCMjHo6J3ImuR_JasvRvKmS5YkyI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
